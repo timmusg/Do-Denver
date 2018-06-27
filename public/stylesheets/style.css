@@ -1,0 +1,189 @@
+
+@import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.imageCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+
+}
+.personalImage{
+  height: 20%;
+  width: 20%;
+}
+
+#map {
+    height: 100%;
+    /*width: 60%;*/
+}
+
+.hidden_form{
+  display: none;
+}
+.iVisit {
+  height: 3rem;
+  width: 2rem;
+}
+.wantVisit {
+  height: 3rem;
+  width: 2rem;
+}
+
+.add-margin {
+  margin-top: 20px;
+}
+
+.logIn {
+  background: none;
+  border: none;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information{
+  border: 1px solid black;
+  background-color: white;
+  height: 70%;
+  width: 20%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.placeIvisit {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+
+}
+.placeWantVisit {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.allPlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.placeBeen {
+    margin: 2rem;
+    width: 30rem;
+    padding: 2rem;
+
+}
+
+.title {
+    font-size: 2rem;
+}
+.full {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.imageHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstImage {
+  height: 73vh;
+  background-image: url(http://www.imfromdenver.com/wp-content/uploads/2014/05/20120906160547-d62557f3.jpg);
+  background-size: cover;
+}
+.secondImage {
+  height: 70vh;
+  width: 70vw;
+  background-image:url(/images/dodenverone.jpg);
+  background-size: cover;
+}
+.thirdImage {
+  height: 35rem;
+  width: 35rem;
+  background-image: url(/images/dodenver3.png);
+  background-size: cover;
+}
+.fourthImage {
+
+  height: 35rem;
+  width: 35rem;
+  background-image: url(/images/dodenverfour.png);
+  background-size: cover;
+}
+.landingText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+.explanation-text {
+  width: 120rem;
+
+}
+
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.padding-left{
+  padding-left: 3rem;
+}
+
+.btn-lg {
+  height: 10rem;
+  width: 120rem;
+  background: none;
+  background-color: hsla(0,0%,90%, 0.65);
+  font-size: 3rem;
+  font-family: 'Special Elite', cursive;
+}
+
+.comment {
+  border-radius: 5px;
+  background-color: rgb(236, 241, 236);
+  border-top: 5%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+header {
+font-family: 'Special Elite', cursive;
+}
+
+.recommendedImage {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 5rem;
+}
+
+.recommendation {
+    position: relative;
+    width: 59%;
+    left: 20%;
+    margin-top: 5rem;
+    padding: 2rem;
+}

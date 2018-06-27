@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <nav class="navbar navbar-default">
+      <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#doDenverNav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/clients">Do Denver</a>
+              </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="doDenverNav">
+                <ul class="nav navbar-nav">
+                  {{#if id}}
+                    <li><a href="../../clients/search">Search Denver</a></li>
+                    <li><a href="../../clients/todo">Places I Want to Visit</a></li>
+                    <li><a href="../../clients/havedone">Places I Have Visited</a></li>
+                  {{/if}}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  {{#if id}}
+                    <li><a href="../../clients/logout">Logout</a></li>
+                  {{else}}
+                  <form class="navbar-form navbar-left" role="search" action="/login" method="post">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control" name="username" placeholder="Username" value="guest">
+                      <label for="password">Password</label>
+                      <input class="form-control" type="password" name="password" placeholder="Password" value="password">
+                      <button type="submit" class="btn btn-default">Log In</button>
+                    </div>
+                  </form>
+                  <div class="form-group"><a href="/signup">
+                  <button class=" btn-btn-default form-control signup">Register as a New User</button>
+                  </a>
+                  </div>
+                  {{/if}}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {{{body}}}
+      {{#if id}}
+        <div class="bgimg">
+        </div>
+      {{/if}}
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../javascripts/dommanip.js"></script>
+  </body>
+</html>
